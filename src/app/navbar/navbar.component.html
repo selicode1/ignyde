@@ -1,0 +1,63 @@
+<nav class="bg-[#1E1E1E] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-1 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="/"><img src="images/logo.svg" class="w-32"/></a>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+          <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" class="hover:border-b transition duration-300 ease-in-out">Home</a>
+          <a routerLink="/about" routerLinkActive="active-link"  class="hover:border-b transition duration-300 ease-in-out">About</a>
+          <a routerLink="/portfolio" routerLinkActive="active-link" class="hover:border-b transition duration-300 ease-in-out">Portfolio</a>
+          <a routerLink="/blog" routerLinkActive="active-link" class="hover:border-b transition duration-300 ease-in-out">Blog</a>
+          <a routerLink="/contact" routerLinkActive="active-link" class="hover:border-b transition duration-300 ease-in-out">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Icon -->
+        <div class="flex md:hidden">
+          <button (click)="toggleMenu()" class="text-white focus:outline-none">
+            <svg
+              class="h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Sliding Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 w-full h-full bg-white text-black transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50"
+      >
+        <div class="flex justify-between items-center p-4">
+        <a href="/" class="text-2xl font-bold">IGNYDE</a>
+          <button (click)="toggleMenu()" class="text-red-500 focus:outline-none">
+            <svg
+              class="h-7 w-7"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col items-center p-6 space-y-10">
+          <a href="/" class="block text-lg hover:text-[#3366FF] transition duration-300 ease-in-out">Home</a>
+          <a href="/about" class="block text-lg hover:text-[#3366FF] transition duration-300 ease-in-out">About</a>
+          <a href="/portfolio" class="block text-lg hover:text-[#3366FF] transition duration-300 ease-in-out">Portolio</a>
+          <a href="/blog" class="block text-lg hover:text-[#3366FF] transition duration-300 ease-in-out">Blog</a>
+          <a href="/contact" class="block text-lg hover:text-[#3366FF] transition duration-300 ease-in-out">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+  
