@@ -1,8 +1,10 @@
 <app-navbar></app-navbar>
 
-<div class="relative flex justify-center items-center py-16 mb-32 ">
+<div class="bg-[#1E1E1E] flex justify-center flex-col pt-32 py-16">
   <!-- Black Background Section -->
-  <div class="relative bg-[#1E1E1E] text-white rounded-2xl w-[80%] lg:w-[80%] p-10 flex flex-col md:flex-row items-center md:items-start">
+  <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('images/hero.jpg');"></div>
+  
+  <div class="relative text-white rounded-2xl w-[80%] lg:w-[80%] p-10 flex flex-col md:flex-row items-center md:items-start mx-auto">
     
     <!-- Left Content -->
     <div class="w-full md:w-full">
@@ -16,44 +18,41 @@
         Get Started
       </button>
     </div>
+  </div>
 
-    <!-- Right Image (Overlapping Effect) -->
-    <div class="absolute right-0 bottom-0 md:bottom-auto md:right-20">
-      <img src="images/image1.jpg" alt="Branding" class="w-[250px] sm:w-[200px] md:w-[250px] xl:w-[350px] rounded-lg shadow-lg lg:block hidden">
+  <div class="relative">
+  
+    <!-- About Us Section -->
+    <div class="max-w-6xl mx-auto relative z-10 bg-white p-10 rounded-lg shadow-lg flex flex-col md:flex-row">
+      
+      <!-- Text Content -->
+      <div class="w-full md:w-2/3">
+        <p class="text-sm uppercase text-gray-500 font-semibold">WHO WE ARE</p>
+        <h2 class="text-4xl font-bold text-black mt-2">About us</h2>
+        <p class="text-gray-700 mt-4">
+          Welcome to the National Hookah Community Association "NHCA". We are a diverse alliance of businesses from all ends of the Hookah experience, from manufacturers and importers of molasses, pipes, and accessories to distributors, Hookah lounges, and Hookah/shisha retail stores.
+        </p>
+        <p class="text-gray-700 mt-2">
+          If you are a Hookah business, please join us and help us defend and protect your business, our culture, and our community.
+        </p>
+        <button class="mt-6 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 cursor-pointer">
+          Read more
+        </button>
+      </div>
+  
+      <!-- Image -->
+      <div class="w-full md:w-1/3 mt-6 md:mt-0 md:ml-6">
+        <img src="images/images2.jpg" alt="Hookah Group" class="w-full rounded-lg shadow-lg">
+      </div>
     </div>
-    
-
+  
+    <!-- Black Background Behind -->
+    <div class="absolute top-1/2 left-0 w-full h-72 bg-black"></div>
   </div>
 </div>
 
-<div class="relative">
-  <!-- About Us Section -->
-  <div class="max-w-6xl mx-auto relative z-10 bg-white p-10 rounded-lg shadow-lg flex flex-col md:flex-row">
-    
-    <!-- Text Content -->
-    <div class="w-full md:w-2/3">
-      <p class="text-sm uppercase text-gray-500 font-semibold">WHO WE ARE</p>
-      <h2 class="text-4xl font-bold text-black mt-2">About us</h2>
-      <p class="text-gray-700 mt-4">
-        Welcome to the National Hookah Community Association "NHCA". We are a diverse alliance of businesses from all ends of the Hookah experience, from manufacturers and importers of molasses, pipes, and accessories to distributors, Hookah lounges, and Hookah/shisha retail stores.
-      </p>
-      <p class="text-gray-700 mt-2">
-        If you are a Hookah business, please join us and help us defend and protect your business, our culture, and our community.
-      </p>
-      <button class="mt-6 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 cursor-pointer">
-        Read more
-      </button>
-    </div>
 
-    <!-- Image -->
-    <div class="w-full md:w-1/3 mt-6 md:mt-0 md:ml-6">
-      <img src="images/images2.jpg" alt="Hookah Group" class="w-full rounded-lg shadow-lg">
-    </div>
-  </div>
 
-  <!-- Black Background Behind -->
-  <div class="absolute top-1/2 left-0 w-full h-1/2 bg-black"></div>
-</div>
 
 <!-- Services Section -->
 <div class="w-full bg-black text-white py-16 relative z-20">
